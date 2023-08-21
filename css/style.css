@@ -8,6 +8,7 @@
 .debug {
   background-color: rgb(242, 177, 177);
   border: 1px solid black;
+  min-height: 80px;
 }
 .d-flex {
   display: flex;
@@ -16,4 +17,10 @@
   width: 98%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* HEADER ************ */
+header {
+  height: 80px;
+  background-color: blue;
 }
