@@ -111,3 +111,8 @@ header .container {
 .free .container .row .col {
   height: 600px;
 }
+/* FOOTER ************ */
+footer {
+  height: 250px;
+  text-align: center;
+}
