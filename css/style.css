@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* UTILITIES **************** */
+.debug {
+  background-color: rgb(242, 177, 177);
+  border: 1px solid black;
+}
+.d-flex {
+  display: flex;
+}
+.container {
+  width: 98%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
