@@ -95,7 +95,7 @@ header .container {
   width: 100%;
   height: 400px;
 }
-.benefits .container .row .col:first-child {
+.benefits .container .title-benefit {
   width: 100%;
   height: 200px;
 }
