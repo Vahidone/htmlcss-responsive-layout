@@ -30,19 +30,36 @@ header .container {
 /* SECTION DEMO ********* */
 .demo {
   height: 670px;
-}
-.demo .container {
-  height: 100%;
   margin-top: 20px;
+}
+.container {
+  height: 100%;
   padding: 10px;
 }
-.demo .container .row {
+.container .row {
   flex-direction: column;
   height: 100%;
   border-radius: 20px;
   padding: 10px;
 }
-.demo .container .row .col {
+.container .row .col {
   width: 100%;
   height: 50%;
+}
+/* SECTION CLEAN CODE ************* */
+.clean-code {
+  height: 380px;
+}
+/* SECTION WEB DESIGN ************ */
+.web-design {
+  height: 380px;
+}
+/* SECTION DEVELOPEMENTE ********** */
+.developement {
+  height: 380px;
+}
+/* SECTION BRANDING ************* */
+.branding {
+  height: 380px;
+  margin-bottom: 40px;
 }
