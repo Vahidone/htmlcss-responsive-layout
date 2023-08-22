@@ -199,26 +199,57 @@ header .container span:nth-child(2) {
 
 /* SECTION TESTIMONIAL ******** */
 .testimonial .row .col {
-  height: 600px;
+  height: 550px;
   padding: 10px 0;
 }
 .testimonial .col .card {
   height: 100%;
-  border-radius: 20px;
+  border-radius: 30px;
   flex-direction: column;
+  text-align: center;
+  padding: 30px;
+  background-color: #9791e3;
+}
+.testimonial .col:first-child .card {
+  background-color: white;
+}
+.testimonial .col:first-child .card p {
+  color: black;
+}
+.testimonial .col .card h1 {
+  font-size: 2rem;
+  margin: 30px auto;
+  color: #9791e3;
+}
+.testimonial .col .card p {
+  line-height: 2.1;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+.testimonial .col .card span {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 .testimonial .col .card .photo,
 .testimonial .col .card .text {
   width: 100%;
   height: 50%;
 }
-.testimonial .container .row .col .card .photo .image {
-  width: 200px;
-  height: 200px;
+.testimonial .col .card .photo .image {
+  width: 230px;
+  height: 230px;
   margin: auto;
-  background-color: black;
+}
+.testimonial .col .card .photo .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 50%;
 }
+
 /* SECTION BENEFITS *********** */
 .benefits {
   background-color: #9791e3;
@@ -334,12 +365,13 @@ RESPONSIVE FOR TABLET
     flex-direction: row;
   }
   .testimonial .container .row .col .card .photo {
-    width: 30%;
+    width: 40%;
     height: 100%;
   }
   .testimonial .container .row .col .card .text {
-    width: 70%;
+    width: 60%;
     height: 100%;
+    text-align: start;
   }
   .testimonial .container .row .col {
     height: 300px;
@@ -432,6 +464,7 @@ RESPONSIVE FOR DESKTOP **************************** */
   .testimonial .container .row .col .card .text {
     width: 70%;
     height: 100%;
+    padding-top: 50px;
   }
   .testimonial .container .row .col {
     height: 300px;
