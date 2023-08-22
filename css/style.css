@@ -16,6 +16,16 @@
 .container {
   margin: 0 30px;
 }
+.btn {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+.btn:hover {
+  background-color: rgb(226, 225, 225);
+  cursor: pointer;
+}
 
 /* HEADER ************ */
 header {
@@ -27,6 +37,37 @@ header .container {
   align-items: center;
   padding: 10px;
 }
+header .container span {
+  padding-top: 10px;
+}
+header .container .nav {
+  display: none;
+}
+
+header .container ul {
+  list-style: none;
+  margin-top: 3px;
+}
+header .container ul li {
+  margin-left: 15px;
+}
+header .container ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}
+header .container ul li a:hover {
+  text-decoration: underline;
+  color: rgb(231, 229, 229);
+}
+/* TODO: sistemare la posizione del button nel header  */
+
+header .container span:nth-child(2) {
+  filter: invert();
+  font-size: 2rem;
+  display: block;
+}
+
 /* SECTION DEMO ********* */
 .demo {
   padding-top: 50px;
@@ -73,17 +114,17 @@ header .container {
 }
 
 /* SECTION TESTIMONIAL ******** */
-.testimonial .container .row .col {
+.testimonial .row .col {
   height: 600px;
   padding: 10px 0;
 }
-.testimonial .container .row .col .card {
+.testimonial .col .card {
   height: 100%;
   border-radius: 20px;
   flex-direction: column;
 }
-.testimonial .container .row .col .card .photo,
-.testimonial .container .row .col .card .text {
+.testimonial .col .card .photo,
+.testimonial .col .card .text {
   width: 100%;
   height: 50%;
 }
@@ -130,6 +171,19 @@ footer {
 RESPONSIVE FOR TABLET
 ************************************ */
 @media screen and (min-width: 768px) {
+  header .container span:nth-child(2) {
+    filter: invert();
+    font-size: 2rem;
+    display: none;
+  }
+  header .container .nav {
+    padding-top: 7px;
+    display: block;
+  }
+  header button {
+    margin-left: 10px;
+    display: block;
+  }
   .demo .container .row {
     flex-direction: row;
     flex-wrap: wrap;
@@ -140,7 +194,7 @@ RESPONSIVE FOR TABLET
     padding: 10px;
   }
   .demo .row .col.big {
-    width: 66.6%;
+    width: 66.66666%;
     height: 565px;
   }
 
@@ -159,12 +213,38 @@ RESPONSIVE FOR TABLET
   .about .container .row .col.testo {
     width: 70%;
   }
+  .testimonial .container .row .col .card {
+    flex-direction: row;
+  }
+  .testimonial .container .row .col .card .photo {
+    width: 30%;
+    height: 100%;
+  }
+  .testimonial .container .row .col .card .text {
+    width: 70%;
+    height: 100%;
+  }
+  .testimonial .container .row .col {
+    height: 300px;
+  }
 }
-/* TODO: sistemare i col nella section benefits ----; */
 
 /* **************************** 
 RESPONSIVE FOR DESKTOP **************************** */
 @media screen and (min-width: 1200px) {
+  header .container span:nth-child(2) {
+    filter: invert();
+    font-size: 2rem;
+    display: none;
+  }
+  header .container .nav {
+    padding-top: 7px;
+    display: block;
+  }
+  header button {
+    margin-left: 10px;
+    display: block;
+  }
   .planning .container .row {
     flex-direction: row;
   }
@@ -179,7 +259,24 @@ RESPONSIVE FOR DESKTOP **************************** */
     height: 350px;
     padding: 10px;
   }
+  .demo .container .row .col.big .card {
+    flex-direction: row;
+  }
   .planning .container .row .col {
     padding: 10px;
+  }
+  .testimonial .container .row .col .card {
+    flex-direction: row;
+  }
+  .testimonial .container .row .col .card .photo {
+    width: 30%;
+    height: 100%;
+  }
+  .testimonial .container .row .col .card .text {
+    width: 70%;
+    height: 100%;
+  }
+  .testimonial .container .row .col {
+    height: 300px;
   }
 }
