@@ -257,6 +257,34 @@ header .container span:nth-child(2) {
 .benefits .container .title-benefit {
   width: 100%;
   height: 200px;
+  text-align: center;
+  line-height: 200px;
+}
+/* TODO: sistemare la size di h1  */
+.benefits .container .title-benefit h1 {
+  font-size: 1.7rem;
+  color: white;
+}
+.benefits .container .row .col .card {
+  height: 420px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 30px;
+}
+.benefits .container .row .col .card h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+.benefits .container .row .col .card span {
+  font-size: 1.7rem;
+}
+.benefits .container .row .col .card p {
+  margin: 30px auto;
+}
+.benefits .container .row .col .card button {
+  padding: 10px 50px;
+  background-color: #9791e3;
+  color: white;
 }
 
 /* SECTION ABOUT ************* */
@@ -354,6 +382,9 @@ RESPONSIVE FOR TABLET
 
   .benefits .row .col {
     width: 50%;
+  }
+  .benefits .container .title-benefit h1 {
+    font-size: 3rem;
   }
   .about .container .row .col {
     width: 30%;
