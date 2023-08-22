@@ -171,19 +171,6 @@ footer {
 RESPONSIVE FOR TABLET
 ************************************ */
 @media screen and (min-width: 768px) {
-  header .container span:nth-child(2) {
-    filter: invert();
-    font-size: 2rem;
-    display: none;
-  }
-  header .container .nav {
-    padding-top: 7px;
-    display: block;
-  }
-  header button {
-    margin-left: 10px;
-    display: block;
-  }
   .demo .container .row {
     flex-direction: row;
     flex-wrap: wrap;
@@ -241,10 +228,7 @@ RESPONSIVE FOR DESKTOP **************************** */
     padding-top: 7px;
     display: block;
   }
-  header button {
-    margin-left: 10px;
-    display: block;
-  }
+
   .planning .container .row {
     flex-direction: row;
   }
