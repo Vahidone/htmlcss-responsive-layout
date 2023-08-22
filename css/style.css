@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "PT Sans", sans-serif;
+}
 
 /* UTILITIES **************** */
 .debug {
@@ -19,7 +22,7 @@
 .btn {
   padding: 7px 15px;
   border: none;
-  border-radius: 20px;
+  border-radius: 50px;
   font-size: 1rem;
 }
 .btn:hover {
@@ -68,10 +71,9 @@ header .container span:nth-child(2) {
   display: block;
 }
 
-/* SECTION DEMO ********* */
+/* SECTION DEMO **************** */
 .demo {
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding: 50px 0;
 }
 
 .row {
@@ -79,27 +81,72 @@ header .container span:nth-child(2) {
 }
 .container .row .col {
   width: 100%;
-  height: 360px;
+  height: 450px;
   padding: 10px;
 }
-.container .row .col.big {
+.demo .row .col.big {
   width: 100%;
-  height: 600px;
+  height: 700px;
 }
-.container .row .col .card {
+.demo .row .col .card {
   border-radius: 20px;
   height: 100%;
   margin: auto;
+  background-color: #b5deff;
+  text-align: center;
+  padding: 30px 30px;
+}
+.demo .col .card span {
+  font-size: 6rem;
+  color: #0285fd;
+  display: block;
+  margin-bottom: 25px;
+}
+.demo .col .card .title {
+  font-size: 2.5rem;
+  color: #0285fd;
+  display: block;
 }
 
-.container .row .col .card.big {
+.demo .row .col .card.big {
   flex-direction: column;
   height: 100%;
+  text-align: start;
+  padding: 0 30px;
+  padding-top: 40px;
 }
 .card.big .sx,
 .card.big .dx {
   width: 100%;
   height: 50%;
+}
+.demo .row .col .card.big .sx h2 {
+  color: #0285fd;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+.demo .row .col .card.big .sx p {
+  text-align: start;
+  margin-bottom: 40px;
+}
+.demo .row .col .card.big .sx .btn {
+  background-color: #0084fd;
+  font-size: 1.2rem;
+  color: white;
+  padding: 15px 50px;
+}
+.demo .row .card.big .dx {
+  justify-content: center;
+  align-items: end;
+}
+.demo .card.big .dx .immagine {
+  width: 250px;
+  height: 300px;
+}
+.demo .row .col .card.big .dx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* SECTION PLANNING ******** */
 .planning {
@@ -184,11 +231,35 @@ RESPONSIVE FOR TABLET
     width: 66.66666%;
     height: 565px;
   }
+  .demo .row .col:nth-child(3),
+  .demo .row .col:nth-child(4),
+  .demo .row .col:nth-child(5) {
+    height: 465px;
+  }
 
   .about .container .row,
   .benefits .container .row {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  .demo .row .col .card span {
+    font-size: 4.7rem;
+    color: #0285fd;
+    display: block;
+    margin-bottom: 25px;
+  }
+  .demo .row .col .card .title {
+    font-size: 1.8rem;
+    color: #0285fd;
+    display: block;
+  }
+  .demo .col .card.big .dx {
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+  .demo .row .col .card.big .dx .immagine {
+    width: 200px;
+    height: 250px;
   }
 
   .benefits .row .col {
@@ -235,6 +306,18 @@ RESPONSIVE FOR DESKTOP **************************** */
   .benefits .row .col {
     width: calc(100% / 3);
   }
+  .demo .row .col .card span {
+    margin-bottom: 10px;
+  }
+  .demo .row .col .card.big .dx {
+    justify-content: center;
+    align-items: self-start;
+  }
+  .demo .row .col .card.big .dx img {
+    width: 120%;
+    height: 116%;
+    object-fit: cover;
+  }
   .demo .container .row .col {
     height: 350px;
     padding: 10px;
@@ -246,6 +329,7 @@ RESPONSIVE FOR DESKTOP **************************** */
   .demo .container .row .col.big .card {
     flex-direction: row;
   }
+
   .planning .container .row .col {
     padding: 10px;
   }
