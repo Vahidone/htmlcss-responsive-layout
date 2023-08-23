@@ -340,6 +340,33 @@ header .container span:nth-child(2) {
 .free .container .row .col {
   height: 600px;
 }
+.free .container .row .col .card {
+  padding: 40px 30px;
+  text-align: center;
+  line-height: 2.5;
+  color: white;
+}
+.free .container .row .col .card h2 {
+  line-height: 1.5;
+}
+.free .container .row .col .card h1 {
+  font-size: 3.5rem;
+  color: #fdc05f;
+}
+.free .container .row .col .card p {
+  line-height: 1.5;
+}
+.free .container .row .col .card .btn {
+  padding: 15px 60px;
+  margin-top: 30px;
+  color: #9791e3;
+}
+.free .container .row .col .card span {
+  display: block;
+  line-height: 1.5;
+  margin-top: 30px;
+  font-size: 14px;
+}
 /* FOOTER ************ */
 footer {
   height: 250px;
