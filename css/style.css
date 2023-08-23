@@ -373,6 +373,13 @@ footer {
   text-align: center;
   background-color: #333333;
   color: white;
+  padding: 50px 30px;
+}
+footer p {
+  margin-bottom: 70px;
+}
+footer span a {
+  color: #9791e3;
 }
 
 /*********************************
@@ -480,6 +487,9 @@ RESPONSIVE FOR TABLET
   .testimonial .container .row .col {
     height: 300px;
   }
+  footer {
+    padding: 50px 200px;
+  }
 }
 
 /* **************************** 
@@ -579,5 +589,8 @@ RESPONSIVE FOR DESKTOP **************************** */
   }
   .about .container .row .col.testo {
     width: 70%;
+  }
+  footer {
+    padding: 50px 400px;
   }
 }
